@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unicode - Học lập trình</title>
-</head>
-<body>
-    <header>
-        <h1>Phan dau</h1>
-        <h2><?php echo $title ?></h2>
-    </header>
-    <main>
-        <h2>Content</h2>
-        <h6><?php echo $content?></h6>
-    </main>
-    <header>
-        <h3>Ket thuc</h3>
-    </header>
-</body>
-</html>
+<h1>Trang chủ unicode</h1>
+<h2>
+{{
+request()->keyword;
+}}
+</h2>
+<div>
+    {!!$content!!}
+</div>
+@for ($i = 1;$i<=10;$i++)
+<p>Phần tử thứ :{{$i}}</p>
+@endfor
+<!-- 
+@while ($index<=10)
+    <p>Phần thử thứ : {{$index}}</p>
+    @php
+    $index++
+    @endphp
+@endwhile -->
+
+@if($number>=10)
+<p>Giá trị đúng </p>
