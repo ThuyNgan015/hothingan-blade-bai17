@@ -1,3 +1,4 @@
+
 @extends ('layouts.client')
 @section('title')
 {{$title}}
@@ -10,6 +11,7 @@
 
 @section('content')
 <h1>Sản phẩm</h1>
+<x-package-alert></x-package-alert>
 @push('scripts')
 <script>
     console.log('push 2')
